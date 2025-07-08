@@ -8,33 +8,114 @@
 
 <body>
     <nav>
-        <div>Himanshu</div>
+        <div class="nav-logo">Himanshu</div>
         <div class="nav-links">
-            <span class="active"><a href="javascript:void(0);">Home</a> </span>
-            <span><a href="javascript:void(0);">About</a></span>
-            <span><a href="javascript:void(0);">Project</a></span>
-            <span><a href="javascript:void(0);">Contact</a></span>
+            <span class="active">Home </span>
+            <span>About</span>
+            <span>Project</span>
+            <span>Contact</span>
         </div>
     </nav>
 
     <section class="home_section">
-        
         <div class="section-content">
+            <div class="home-txt-sec">
+                <div class="main_heading">Hey there! <span class="hand_icon">👋</span></div>
+                <div class="main_heading">I'm <span class="home-name">Himanshu Chauhan</span></div>
+                <div class="main-info"><span>Software Engineer. </span>
+                    A self-taught developer with an interest in Computer Science.
+                </div>
+                <div class="main-info current"> 🚀 Currently specializing in Backend </div>
 
+            </div>
             <div>
-                <div class="main_heading">Hi i am web developer</div>
+                <img class="my_image" src="https://cdn.pixabay.com/photo/2017/09/10/00/28/png-2734003_1280.png" alt=""
+                    srcset="">
+            </div>
+        </div>
+    </section>
+
+    <section class="about_section">
+
+        <div class="about-inner ">
+
+            <!-- <div class="square" data-x="190" data-r="320">aaaaa</div>
+            <div class="square" data-x="80" data-r="23">bbbb</div>
+            <div class="square" data-x="270" data-r="0">ccc</div> -->
+
+            <div class="ab-sec">
+                <h3> About Me</h3>
                 <p>
-                    my about
+                    Hey! I'm Abdul Rahman, I've been close to a computer since an early age, and been passionate about
+                    it ever since.
                 </p>
+
+                <p>
+                    I really liked to build stuff using no-code tools
+                    back in 2010, and from that, I explored how to code myself, fast-forward to today, I do programming
+                    in various languages and technologies, and had the privilege to worked in a Recruitment Company
+                    and a SaaS Company
+                    I'm interested in building something awesome with code and automate tasks with code, currently
+                    focused on Web & Mobile Development,
+                    Open Source
+                    and Competitive Programming
+                </p>
+
+                <p>
+                    When I'm not coding I play games with my friends, watch some show on Netflix, or if the weather's
+                    good, play basketball! 🏀
+                </p>
+
             </div>
-            <div>
-                <img class="my_image" src="https://cdn.pixabay.com/photo/2017/09/10/00/28/png-2734003_1280.png" alt="" srcset="">
+            <div class="ab-sec">
+
+                <div class="ab-img-div">
+                    <img class="ab-sec-img" src="https://cdn.pixabay.com/photo/2018/03/26/02/05/cat-3261420_1280.jpg" alt="" srcset="">
+                </div>
+
+
             </div>
+
 
         </div>
 
-
     </section>
+    <footer>
+        <script type="module">
+            import { animate, waapi, utils } from 'https://cdn.jsdelivr.net/npm/animejs/+esm';
+
+            animate('.hand_icon', {
+                rotate: [
+                    { to: -15, duration: 300 },
+                    { to: 15, duration: 300 },
+                    { to: 0, duration: 300 }
+                ],
+                ease: 'easeInOutSine',
+                loop: true,
+                loopDelay: 1000
+            });
+
+            // waapi.animate('.square', {
+            //     x: 240, //  -> 240px
+            //     width: 75, // -> 75px
+            //     rotate: '.75turn',
+            // });
+
+            // animate('.square', {
+            //     x: $el => /** @type {HTMLElement} */($el).getAttribute('data-x') * 4,
+            //     y: (_, i) => 50 + (-50 * i),
+            //     scale: (_, i, l) => (l - i) * .75,
+            //     rotate: ($el) => /** @type {HTMLElement} */($el).getAttribute('data-r'),
+            //     // borderRadius: () => `+=${utils.random(20, 25)}`,
+            //     borderRadius: () => `+=${utils.random(30, 40)}`,
+            //     duration: () => utils.random(1200, 1800),
+            //     // delay: () => utils.random(0, 400),
+            //     delay: () => 400,
+            //     ease: 'outElastic(1, .5)',
+            // });
+
+        </script>
+    </footer>
 </body>
 
 </html>

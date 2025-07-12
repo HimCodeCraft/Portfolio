@@ -123,7 +123,7 @@ nav {
 .about-inner {
     /* height: 95%; */
     width: 95%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 20px;
     padding: 10px;
     background: var(--primary-color);
@@ -146,7 +146,7 @@ nav {
     display: flex;
     padding: 4vh;
     margin: 6vh;
-    
+
 }
 
 .ab-sec {
@@ -155,7 +155,8 @@ nav {
 }
 
 .ab-img-circle {
-    width: 300px;         /* or any size you prefer */
+    width: 300px;
+    /* or any size you prefer */
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
@@ -169,16 +170,22 @@ nav {
     display: block;
 }
 
-.ab-sec.text_sec{
+.ab-sec.text_sec {
     font-size: larger;
 }
 
-.ab-sec.text_sec span{
+.ab-sec.text_sec span {
     font-weight: 500;
 }
 
-.ab-sec.img_sec{
+.ab-sec.img_sec {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.project_section {
+    height: 92vh;
+    background-image: linear-gradient(180deg, var(--dark-color) 0%, var(--green-color) 35%, var(--primary-color) 100%);
+
 }

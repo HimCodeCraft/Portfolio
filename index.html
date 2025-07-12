@@ -3,27 +3,27 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>My Css Work</title>
+    <title>Himanshu</title>
 </head>
 
 <body>
-    <nav>
+    <nav id="navbar">
         <div class="nav-logo">Himanshu</div>
-        <div class="nav-links">
-            <span class="active">Home </span>
-            <span>About</span>
-            <span>Project</span>
-            <span>Contact</span>
+        <div class="nav-links move_to_sec">
+            <span class="active" data-section="home_section">Home </span>
+            <span data-section="about_section">About</span>
+            <span data-section="project_section">Project</span>
+            <span data-section="home_section">Contact</span>
         </div>
     </nav>
 
-    <section class="home_section">
+    <section class="home_section" data-color="light">
         <div class="section-content">
             <div class="home-txt-sec">
                 <div class="main_heading">Hey there! <span class="hand_icon">👋</span></div>
                 <div class="main_heading">I'm <span class="home-name">Himanshu Chauhan</span></div>
-                <div class="main-info"><span>Software Engineer. </span>
-                    A self-taught developer with an interest in Computer Science.
+                <div class="main-info"><span>Web Developer. </span>
+                    A self-taught Developer with an interest in Photography📸.
                 </div>
                 <div class="main-info current"> 🚀 Currently specializing in Backend </div>
 
@@ -35,7 +35,7 @@
         </div>
     </section>
 
-    <section class="about_section">
+    <section class="about_section" data-color="dark">
 
         <div class="about-inner ">
 
@@ -50,19 +50,22 @@
                 </p>
 
                 <p>
-                    I'm a <span> Web Developer</span> who loves building things that work 😁. I’ve spent most of my time working with
-                    web technologies like <span> Laravel, CodeIgniter, and Next.js</span>, I’ve been exploring new tools and workflows like
-                    SaaS-based CSS, CI/CD pipelines, and more. Always trying to level up my skills.
+                    I'm a <span> Web Developer</span> with over <span> 3 years of experience</span>, passionate about
+                    building things that work 😁. I have hands-on experience with
+                    web technologies like <span> Laravel, CodeIgniter, and Next.js</span>.I always trying to level up my
+                    skills.
                 </p>
 
                 <p>
-                    Honestly,<span>I’m not a Designer</span>. But i'm learning how to make
-                    things look good (or at least not broken 😅). I enjoy figuring things out, picking up new tools, and
-                    constantly improving.
+                    Honestly,<span>I’m not a Designer</span>. But i'm learning how to use CSS and make
+                    things look good (or at least not broken 😅). So, <span> I challenged myself</span> to build this
+                    <span> portfolio</span> with
+                    plain CSS to sharpen my core skills and test my limits.
                 </p>
 
                 <p>
-                    When I’m not coding, you’ll probably find me behind a phone camera.<span> I have a real love for photography </span>📸
+                    When I’m not coding, you’ll probably find me behind a phone camera.<span> I have a real love for
+                        photography </span>📸
                     and capturing the world from different angles.
                 </p>
 
@@ -72,11 +75,18 @@
                     <img src="/my_profile.webp" alt="My image" />
                 </div>
             </div>
+        </div>
+    </section>
 
-
+    <section class="project_section" data-color="light">
 
     </section>
+
+
     <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="module">
             import { animate, waapi, utils } from 'https://cdn.jsdelivr.net/npm/animejs/+esm';
 
@@ -109,6 +119,53 @@
             //     delay: () => 400,
             //     ease: 'outElastic(1, .5)',
             // });
+
+            // const navbar = document.getElementById('navbar');
+
+            // const observer = new IntersectionObserver(
+            //     (entries) => {
+            //         entries.forEach((entry) => {
+            //             if (entry.isIntersecting) {
+            //                 console.log(entry)
+            //                 const color = entry.target.getAttribute('data-color');
+            //                 if (color === 'dark') {
+            //                     navbar.style.backgroundColor = '#1f4843';
+            //                     navbar.style.color = '#fff';
+            //                 } else {
+            //                     navbar.style.backgroundColor = '#ecf4e7';
+            //                     navbar.style.color = '#1f4843';
+            //                 }
+            //             }
+            //         });
+            //     },
+            //     { threshold: 0.5 } // Adjust sensitivity as needed
+            // );
+
+            // document.querySelectorAll('section').forEach((section) => {
+            //     observer.observe(section);
+            // });
+
+
+            $(document).ready(function () {
+                $('.move_to_sec span').on('click', function () {
+                    let section_name = $(this).attr('data-section');
+                    $('.move_to_sec span').removeClass('active');
+                    $(this).addClass('active');
+
+                    console.log(this)
+                })
+
+                $('.move_to_sec span').on('click', function () {
+                    const sectionId = $(this).data('section');
+                    const target = $('.' + sectionId);
+
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 60
+                        }, 600);
+                    }
+                });
+            })
 
         </script>
     </footer>

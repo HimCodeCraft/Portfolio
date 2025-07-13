@@ -22,7 +22,7 @@ nav {
     top: 0;
     gap: 30%;
     z-index: 99;
-    border-radius: 0px 0px 20px 20px;
+    /* border-radius: 0px 0px 20px 20px; */
 
 }
 
@@ -184,8 +184,141 @@ nav {
     align-items: center;
 }
 
-.project_section {
-    height: 92vh;
-    background-image: linear-gradient(180deg, var(--dark-color) 0%, var(--green-color) 35%, var(--primary-color) 100%);
+.contact_section {
+  min-height: 92vh;
+  padding: 60px 20px;
+  /* background-image: linear-gradient(180deg, var(--dark-color) 0%, var(--green-color) 35%, var(--green-color) 100%); */
+  background-color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
 
+.inner-contact-sec {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.get-touch {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.inner-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.inner-div {
+  width: 100%;
+}
+
+.inner-body .inner-div {
+  flex: 1;
+  padding: 20px;
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  background-color: rgba(31, 72, 67, 0.5);
+  border-radius: 8px;
+}
+
+.details-section .connect-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details-section .connect-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-section input[type="text"],
+.form-section textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  /* width: 100%; */
+}
+
+.form-section input[type="submit"] {
+  background-color: var(--green-color);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-section input[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+/* From Uiverse.io by adamgiebl */ 
+button {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+  opacity: 0;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
 }

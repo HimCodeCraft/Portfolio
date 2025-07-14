@@ -78,7 +78,16 @@
         </div>
     </section>
 
-    <section class="contact_section" id="contact_section" data-color="light">
+    <section class="project_section"  data-color="light">
+        <div class="inner-contact-sec">
+            <h3 class="get-touch">Projects</h3>
+            <div class="inner-body">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contact_section" data-color="light">
         <div class="inner-contact-sec">
             <h3 class="get-touch">Get in Touch</h3>
             <div class="inner-body">
@@ -203,8 +212,6 @@
                     let section_name = $(this).attr('data-section');
                     $('.move_to_sec span').removeClass('active');
                     $(this).addClass('active');
-
-                    console.log(this)
                 })
 
                 $('.move_to_sec span').on('click', function () {

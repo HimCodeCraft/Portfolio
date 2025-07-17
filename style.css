@@ -425,3 +425,15 @@ button:active {
     left: 100%;
   }
 }
+
+.project_section {
+  min-height: 50vh;
+  padding: 60px 20px;
+  /* background-image: linear-gradient(180deg, var(--dark-color) 0%, var(--green-color) 35%, var(--green-color) 100%); */
+  background-color: var(--dark-color);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  color: #fff;
+}
+

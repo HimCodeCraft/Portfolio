@@ -120,14 +120,7 @@ nav {
 
 }
 
-.about-inner {
-  /* height: 95%; */
-  width: 95%;
-  /* border: 1px solid red; */
-  border-radius: 20px;
-  padding: 10px;
-  background: var(--primary-color);
-}
+
 
 .hand_icon {
   display: inline-block;
@@ -146,6 +139,9 @@ nav {
   display: flex;
   padding: 5vh;
   margin: 6vh;
+  width: 85%;
+  background-color: var(--dark-color);
+  color: white;
 
 }
 
@@ -172,7 +168,7 @@ nav {
 
 .ab-sec.text_sec {
   font-size: larger;
-  width: 60%;
+  width: 70%;
 }
 
 .ab-sec.text_sec span {
@@ -180,7 +176,7 @@ nav {
 }
 
 .ab-sec.img_sec {
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,6 +196,10 @@ nav {
 .inner-contact-sec {
   max-width: 1000px;
   width: 100%;
+}
+
+.project_section .inner-contact-sec {
+  max-width: 100%;
 }
 
 .get-touch {
@@ -439,27 +439,77 @@ button:active {
   color: #fff;
 }
 
-.pro-cards{
+.pro-cards {
   background-color: white;
   color: black;
-  border: 2px solid red;
-  height: 350px;
-  width: 250px;
+  /* border: 2px solid red; */
+  height: 450px;
+  width: 450px;
   border-radius: 10px;
   /* padding: 5px; */
-  
+
 }
 
-.pro-card-img{
-  height: 70%;
+.pro-card-img {
+  height: 50%;
   /* width: 100px; */
   overflow: hidden;
   border-radius: 10px 10px 0px 0px;
 }
 
-.pro-card-img img{
-    width: 100%;
+.pro-card-img img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.pro-card-info {
+  padding: 0px 12px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: x-large;
+}
+
+/* .card-description {
+  margin-top: 10px;
+} */
+
+/* .card-tech {
+  margin-top: 10px;
+} */
+
+.card-tech span {
+  /* border: 1px solid red; */
+  padding: 4px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  /* color: var(--dark-color); */
+}
+
+/* .card-btn {
+  margin-top: 10px;
+} */
+
+.card-btn {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.card-btn a {
+  padding: 2px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.body-center {
+  justify-content: center;
 }

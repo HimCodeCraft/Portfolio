@@ -137,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-            
+
 
             </div>
         </div>
@@ -280,10 +280,26 @@
                         }, 600);
                     }
                 });
+
+                changeNav();
             })
 
+            window.addEventListener("scroll", function () {
+                changeNav();
+            });
+
+
+            function changeNav() {
+                let home_sec = $('.home_section').height() - 120;
+                if (window.scrollY >= home_sec) {
+                    $('#navbar').addClass('dark_nav')
+                } else {
+                    $('#navbar').removeClass('dark_nav')
+                }              
+
+            }
         </script>
-        
+
     </footer>
 </body>
 

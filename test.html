@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Transparent Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-size: cover;
+      background-color: green;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      /* Glass effect */
+      background-color: rgba(0, 0, 0, 0);
+      /* Transparent black */
+      color: white;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    .content {
+      margin-top: 80px;
+      padding: 2rem;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="logo">MySite</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is some sample content. Scroll to see the background.</p>
+  </div>
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is some sample content. Scroll to see the background.</p>
+  </div>
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is some sample content. Scroll to see the background.</p>
+  </div>
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is some sample content. Scroll to see the background.</p>
+  </div>
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is some sample content. Scroll to see the background.</p>
+  </div>
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is some sample content. Scroll to see the background.</p>
+  </div>
+
+</body>
+
+</html>
